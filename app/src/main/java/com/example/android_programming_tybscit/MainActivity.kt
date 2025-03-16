@@ -1,10 +1,12 @@
 package com.example.android_programming_tybscit
 
 import android.os.Bundle
+import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import org.json.JSONArray
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +18,14 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
+        var res: String = ""
+        try {
+            var jsonStream = assets.open("data.json")
+            res = jsonStream.bufferedReader().use { it.readText() }
+        }catch (e:Exception){
+            e.printStackTrace()
+        }
+        val jsonArray = JSONArray(res)
+        findViewById<ListView>(R.id.students_list).adapter = StudentListAdapter(jsonArray, this)
+     }
 }

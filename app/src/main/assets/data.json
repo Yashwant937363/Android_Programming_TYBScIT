@@ -1,0 +1,27 @@
+[
+  {
+    "grade": "A+",
+    "rno": 23,
+    "name": "Shahil"
+  },
+  {
+    "grade": "A+",
+    "rno": 18,
+    "name": "Ankit"
+  },
+  {
+    "grade": "A",
+    "rno": 20,
+    "name": "Soham"
+  },
+  {
+    "grade": "A",
+    "rno": 19,
+    "name": "Mohit"
+  },
+  {
+    "grade": "A",
+    "rno": 37,
+    "name": "Yashwant"
+  }
+]
