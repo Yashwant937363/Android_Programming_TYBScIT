@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Android_Programming_TYBScIT" parent="@style/Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#00E5FF</item>
+    </style>
+
+    <style name="Theme.Android_Programming_TYBScIT" parent="Base.Theme.Android_Programming_TYBScIT" />
+</resources>
